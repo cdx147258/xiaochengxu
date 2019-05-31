@@ -1,0 +1,17 @@
+<!--pages/fn/fn.wxml-->
+<view>
+{{list}}
+    <block wx:for="{{list}}" wx:key="*this">
+        <text>
+            商品名称{{item.name}}
+        </text>
+        <text>
+            商品价格{{item.price}}
+        </text>
+        <text>
+            商品{{item.world}}
+        </text>
+    </block>
+    <button bindtap='toAdd'>添加</button>
+    <button bindtap='todelete'>删除</button>
+</view>
